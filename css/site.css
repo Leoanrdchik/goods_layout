@@ -1,0 +1,500 @@
+body {
+  margin: 0;
+  font-family: "Jost", sans-serif;
+  min-height: 100vh; /* Чтобы страница занимала всю высоту viewport */
+}
+
+.container {
+  max-width: 1440px; /* Или width: 90%, чтобы занимать 90% ширины экрана */
+  margin: 0 auto; /* Центрирование контейнера */
+  padding: 20px;    /* Добавление отступов */
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu .main-button {
+  color: #000000;
+  margin-left: 102px;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 1;
+  letter-spacing: 0%;
+}
+
+.menu h5 {
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 1;
+  letter-spacing: 0%;
+  margin-left: 20px;
+}
+
+.menu .view-goods {
+  font-weight: 400;
+  font-size: 23px;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  background-color: #8C9FE3;
+  border-radius: 10px;
+  width: 281px;
+  height: 50px;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.image-wrapper {
+  position: relative; 
+  height: 700px; 
+}
+
+.Iphone {
+  position: absolute; 
+  width: 1031px;
+  height: 521px;
+  top: 172px;
+  left: 204px;
+  border-radius: 50px;
+  object-fit: cover;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.best-goods {
+  width: 558;
+  height: 51;
+  top: 789px;
+  left: 441px;
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.smart-technic {
+  width: 467;
+  height: 40;
+  top: 847px;
+  left: 486px;
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+/* Общие стили для ячеек */
+.first-window,
+.second-window,
+.third-window {
+  width: 360px;
+  height: 400px;
+  /* margin-left: 102px;  Убрал, т.к. лучше задавать отступы контейнеру*/
+  border-radius: 50px;
+  border: 1px solid gray;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  position: relative; /* Для правильного позиционирования .buy */
+}
+
+/* Стили для описания */
+.first-window .description,
+.second-window .description,
+.third-window .description {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #636363;
+}
+
+/* Стили для изображений */
+.first-window img,
+.second-window img,
+.third-window img {
+  width: 288px;
+  height: 145px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+/* Общие стили для цены и старой цены */
+.first-window .priceFirst,
+.second-window .priceFirst,
+.third-window .priceFirst {
+    width: 84px;
+    height: 38px;
+    font-family: Jost;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #3E68FF;
+}
+
+.first-window .oldPriceFirst,
+.second-window .oldPriceFirst,
+.third-window .oldPriceFirst {
+    width: 81px;
+    height: 38px;
+    font-family: Jost;
+    font-weight: 300;
+    font-size: 26px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    color: #282828;
+    text-decoration: line-through;
+}
+
+/* Стили для кнопки "Купить" */
+.first-window .buy,
+.second-window .buy,
+.third-window .buy {
+  /* position: absolute; - раскоментируй если нужны проблемы*/
+  /*top: 1281px;          раскоментируй если нужны проблемы*/
+  /*left: 243px;         раскоментируй если нужны проблемы */
+  font-family: Jost;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #FFFFFF;
+  font-weight: 400;
+  font-size: 23px;
+  background-color: #8C9FE3;
+  border-radius: 10px;
+  width: 281px;
+  height: 50px;
+  margin-left: 17px;
+  margin-top: 3px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: none;
+}
+
+
+.first-window .buy:hover,
+.second-window .buy:hover,
+.third-window .buy:hover {
+  background-color: #778bdd; 
+  cursor: pointer;
+}
+
+.wide-goods {
+  display: flex;               /* Включаем Flexbox */
+  flex-direction: row;        /* Располагаем элементы в строку */
+  justify-content: space-around; /* Распределяем элементы равномерно по ширине */
+  align-items: stretch; 
+}
+
+.container .donefeedback {
+  font-family: Jost;
+  font-weight: 600px;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-top: 96px;
+  display: flex;               /* Включаем Flexbox */
+  flex-direction: row;        /* Располагаем элементы в строку */
+  justify-content: space-around; /* Распределяем элементы равномерно по ширине */
+  align-items: stretch; 
+}
+
+.container .facefeedback {
+  width: 80px;
+  height: 80px;
+  border-radius: 50px;
+  display: block; /*Чтобы центрировать*/
+  margin: 0 auto; /*Чтобы центрировать*/
+}
+
+.container .facefeedback img {
+  max-width: 100%; /*  Максимальная ширина изображения */
+  max-height: 100%; /* Максимальная высота изображения */
+  display: block; /*Чтобы центрировать*/
+  margin: 0 auto; /*Чтобы центрировать*/
+}
+
+.container .namefeedback {
+  width: 216;
+  height: 35;
+  font-family: Jost, sans-serif;
+  font-weight: 300px;
+  font-size: 24px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #000000;
+  display: flex;               /* Включаем Flexbox */
+  flex-direction: row;        /* Располагаем элементы в строку */
+  justify-content: space-around; /* Распределяем элементы равномерно по ширине */
+  align-items: stretch; 
+}
+
+.container .job {
+  width: 91;
+  height: 29;
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 20px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #545454;
+  display: flex;               /* Включаем Flexbox */
+  flex-direction: row;        /* Располагаем элементы в строку */
+  justify-content: space-around;
+  align-items: stretch; 
+}
+
+.container .mainfeedback {
+  width: 1015;
+  height: 175;
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 24px;
+  line-height: 1.4;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.container .hasAsk {
+  width: auto;               /* Автоматическая ширина */
+  height: auto;              /* Автоматическая высота */
+  margin-top: 100px;
+
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;          /* Или лучше использовать число без единицы: 1 */
+  letter-spacing: 0%;
+
+  display: flex;               /* Включаем Flexbox для .hasAsk */
+  justify-content: center;      /* Центрируем по горизонтали */
+  align-items: center;          /* Центрируем по вертикали */
+  text-align: center;          /* Центрируем текст по горизонтали */
+}
+
+.container .ReadyHelp {
+  width: auto;               /* Автоматическая ширина */
+  height: auto;              /* Автоматическая высота */
+  margin-top: 5px;
+  
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 1.3;
+  letter-spacing: 0%;
+  
+
+  display: flex;               /* Включаем Flexbox для .hasAsk */
+  justify-content: center;      /* Центрируем по горизонтали */
+  align-items: center;          /* Центрируем по вертикали */
+  text-align: center;          /* Центрируем текст по горизонтали */
+}
+
+.container .anketa {
+  width: 700px;
+  height: 400px;
+  border-radius: 50px;
+  border: 1px solid #76767680;
+  padding: 20px;
+  margin: 0 auto; /*  Центрируем анкету по горизонтали */
+  box-sizing: border-box;
+  text-align: center;
+  font-family: Jost;
+  font-weight: 500;
+  font-size: 26px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  position: relative; /*  Для позиционирования элементов внутри анкеты */
+}
+
+.container .anketa .enterName {
+  width: 585px;
+  height: 64px;
+  border-radius: 30px;
+  border: 1px solid #76767680;
+  margin: 20px auto; /*  Центрируем поле ввода по горизонтали и добавляем отступ сверху и снизу */
+  display: block; /*чтобы работали отступы*/
+  padding: 0 15px; /*Отступ от текста от рамки*/
+  box-sizing: border-box; /*Чтобы padding не ломал размеры*/
+  font-size: 18px;
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.container .anketa .email {
+  width: 585px;
+  height: 64px;
+  border-radius: 30px;
+  border: 1px solid #76767680;
+  margin: 20px auto; /*  Центрируем поле ввода по горизонтали и добавляем отступ сверху и снизу */
+  display: block; /*чтобы работали отступы*/
+  padding: 0 15px; /*Отступ от текста от рамки*/
+  box-sizing: border-box; /*Чтобы padding не ломал размеры*/
+  font-size: 18px;
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.container .anketa .about {
+  width: 585px;
+  height: 64px;
+  border-radius: 30px;
+  border: 1px solid #76767680;
+  margin: 20px auto; /*  Центрируем поле ввода по горизонтали и добавляем отступ сверху и снизу */
+  display: block; /*чтобы работали отступы*/
+  padding: 0 15px; /*Отступ от текста от рамки*/
+  box-sizing: border-box; /*Чтобы padding не ломал размеры*/
+  font-size: 18px;
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+input[type="submit"] {
+  width: 210px;
+  height: 35px;
+  margin-top: 20px;
+  background-color: #9EB4FF; 
+  border-radius: 10px ;
+  border: none;              /* Убираем рамку */
+  color: white;             /* Белый текст */
+  text-align: center;        /* Центрируем текст */
+  text-decoration: none;     /* Убираем подчеркивание */
+  display: inline-block;      /* Делаем кнопку блочным элементом */
+  font-size: 16px;          /* Размер шрифта */
+  cursor: pointer;           /* Меняем курсор при наведении */
+
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 100%;
+  letter-spacing: 0%;
+
+}
+
+input[type="submit"]:hover {
+  background-color: #778bdd; /* Более темный зеленый при наведении */
+}
+
+.container .number {
+
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 45%;
+  margin-top: 7%;
+}
+
+.container .happyMeet {
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 28px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 34%;
+  margin-top: 3%;
+}
+
+.container .map {
+  width: 1440px;
+  height: 373.5px;
+  margin-top: 70px;
+  margin-right: 50px;
+}
+
+.container .aboutWe {
+  width: 1440px;
+  height: 227px;
+  top: 3149px;
+}
+
+.container .aboutWe .common {
+  margin-left: 483px;
+  margin-bottom: 10px;
+  position: relative;
+  top: -200px;
+
+  font-family: Jost;
+  font-weight: 300;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+}
+
+.container .aboutWe .phoneNumber {
+  color: #3E68FF;
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 775px;
+
+  
+  position: relative;
+  top: -365px;
+
+}
+
+.container .aboutWe .EmailName {
+  font-family: Jost;
+  font-weight: 400;
+  font-size: 25px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #3E68FF;
+  margin-left: 775px;
+
+  position: relative;
+  top: -365px;
+}
+
+.container .aboutWe .one {
+  font-family: Jost;
+  font-weight: 600;
+  font-size: 35px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  margin-left: 122px;
+  margin-top: 88px;
+  margin-bottom: 88px;
+}
+
+.container .aboutWe .telegram {
+  position: relative;
+  margin-left: 1115px;
+  top: -475px;
+}
+
+.container .aboutWe .mail {
+  position: relative;
+  margin-left: 1215px;
+  top: -581px;
+}
